@@ -43,7 +43,7 @@ ingress:
   hosts:
     - host:
       paths:
-        - /
+        - /greeting
   tls: []
 
 resources:
