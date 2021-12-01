@@ -32,7 +32,7 @@ spec:
               service:
                 name: {{ $name }}-service
                 port:
-                  number: {{ .Values.service.port }}
+                  number: 8090
         {{- end }}
   {{- end }}
 {{- end }}
