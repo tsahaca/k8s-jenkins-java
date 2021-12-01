@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: tsaha/k8s-jenkins-example
-  tag: latest
+  tag: 0.0.1-SNAPSHOT
   pullPolicy: Always
 
 imagePullSecrets: []
