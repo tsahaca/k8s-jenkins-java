@@ -4,9 +4,12 @@ Example project on how to automatically deploy a Kotlin REST service on Kubernet
 
 ## Requirements
 
-- Kotlin
+- K8s Cluster
+- Java
 - Maven
 - Docker
+- Jenkins
+- Helm
 
 ## Build
 
