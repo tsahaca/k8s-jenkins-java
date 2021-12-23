@@ -9,9 +9,9 @@
 	</parent>
 
 	<groupId>com.example</groupId>
-	<artifactId>k8s-jenkins-example</artifactId>
+	<artifactId>k8s-jenkins-java</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>k8s-jenkins-example</name>
+	<name>k8s-jenkins-java</name>
 	<description>Spring Boot Demo project to deploy on Kubernetes using Jenkins and Helm 3</description>
 	<properties>
 		<java.version>1.8</java.version>

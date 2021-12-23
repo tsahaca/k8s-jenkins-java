@@ -4,5 +4,5 @@ RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 # Change to non-root privilege
 USER appuser
 EXPOSE 8090
-ADD /target/k8s-jenkins-example*.jar k8s-jenkins-example.jar
-ENTRYPOINT ["java", "-jar", "k8s-jenkins-example.jar"]
+ADD /target/k8s-jenkins-java*.jar k8s-jenkins-java.jar
+ENTRYPOINT ["java", "-jar", "k8s-jenkins-java.jar"]

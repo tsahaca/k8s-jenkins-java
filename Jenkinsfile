@@ -3,8 +3,8 @@ pipeline {
         DEPLOY = "${env.BRANCH_NAME == "master" || env.BRANCH_NAME == "develop" ? "true" : "false"}"
         NAME = "${env.BRANCH_NAME == "master" ? "example" : "example-staging"}"
         VERSION = readMavenPom().getVersion()
-        DOMAIN = 'localhost'
-        REGISTRY = 'tsaha/k8s-jenkins-example'
+        DOMAIN = 'example.com'
+        REGISTRY = 'tsaha/k8s-jenkins-java'
         REGISTRY_CREDENTIAL = 'tsaha-docker-hub'
     }
     agent {
