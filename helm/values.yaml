@@ -5,13 +5,13 @@
 replicaCount: 1
 
 image:
-  repository: tsaha/k8s-jenkins-example
+  repository: tsaha/k8s-jenkins-java
   tag: 0.0.1-SNAPSHOT
   pullPolicy: Always
 
 imagePullSecrets: []
-name: "example"
-domain: "localhost"
+name: "greeting"
+domain: "example.com"
 
 serviceAccount:
   # Specifies whether a service account should be created
