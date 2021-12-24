@@ -1,7 +1,7 @@
 pipeline {
     environment {
         DEPLOY = "${env.BRANCH_NAME == "master" || env.BRANCH_NAME == "develop" ? "true" : "false"}"
-        NAME = "${env.BRANCH_NAME == "master" ? "example" : "example-staging"}"
+        NAME = "${env.BRANCH_NAME == "master" ? "greeting" : "greeting-staging"}"
         VERSION = readMavenPom().getVersion()
         DOMAIN = 'example.com'
         REGISTRY = 'tsaha/k8s-jenkins-java'
