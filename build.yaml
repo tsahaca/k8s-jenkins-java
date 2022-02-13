@@ -30,5 +30,5 @@ spec:
   volumes:
     - name: m2
       persistentVolumeClaim:
-        claimName: "maven-repository-cache"
+        claimName: maven-repo-cache
         readOnly: false  
