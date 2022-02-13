@@ -30,5 +30,5 @@ spec:
   volumes:
     - name: m2
       persistentVolumeClaim:
-        claimName: "jenkins-pvc"
+        claimName: "maven-repository-cache"
         readOnly: false  
