@@ -13,7 +13,8 @@ spec:
       tty: true
       volumeMounts:
         - name: m2
-          mountPath: /root/.m2
+          mountPath: /root/.m2/repository
+          readOnly: false
     - name: docker
       image: docker:19.03.1-dind
       securityContext:
@@ -28,5 +29,6 @@ spec:
       tty: true
   volumes:
     - name: m2
-      hostPath:
-        path: /root/.m2
+      persistentVolumeClaim:
+        claimName: "jenkins-pvc"
+        readOnly: false  
